@@ -20,6 +20,8 @@
 - **Semi-Supervised Learning** : combines elements of both, using a small portion of labeled data to guide the learning process
 
 - **Reinforced Learning** : Mimics human learning by reqarding correct decisions and penalizing mistakes, allowing an agent o refine its actions over time to achieve the best outcome
+
+- **Large Language Models (LLM)** : are advanced DL models built on neural networks, specifically transformers, designed to understand and generate human-like text
   
 ### How It Works
 
@@ -37,6 +39,12 @@
 - Deep Learning (DL) is concerned with receiving data as input and producing some kind of prediction or classification as output
   - The important advantage over ML is that DL does not need data to be labelled and as such doesn't require human interaction; in that way it is self-learning
 
+- LLM's are first trained in a "pre-training" phase, where they process vast amounts of text
+  - LLM's use billions of parameters that function like puzzle pieces, enabling them to understand and generate human-like planguage when assessed together
+
 ### Examples
 
 ### Tools / Commands
+  
+- Transformer Neural Networks (introduced by Google in 2017) revolutionized LLMs by enabling parallel text processing instead of sequential word-by-word analysis
+  - This allowed models to assign 'attention' to keywords which improved contextual understanding
