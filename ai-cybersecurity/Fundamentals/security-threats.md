@@ -44,7 +44,28 @@
 
 ### Examples
 
+#### Vulnerabilities in AI Models
+
+- **Prompt Injection**
+  - Prompt Injection occurs when the original instructions provided to the model are overridden, often for malicious purposes such as disclosing more information than it should, or generating harmful content
+
+- **Data Poisoning**
+  - This is when an attacker manipulates the training data/corpus used to train an AI model so its generated output is incorrect or biased
+
+- **Model Theft**
+  - Model Theft occurs when an attacker gains unauthorized access to an AI model. From there the attacker could potentially steak the intellectual property that lies within and even use it for malicious purposes
+
+- **Privacy Leakage**
+  - This refers to the possibility of an AI model inadvertently revealing sensitive information about the data it was training on, even if the data was supposed to be kept confidential
+
+- **Model Drift**
+  - Model Drift refers to the potential for a Model's performance to dirft over time due to changes in the data or the environment surrounding it
+
 ### Tools / Commands
   
-- Transformer Neural Networks (introduced by Google in 2017) revolutionized LLMs by enabling parallel text processing instead of sequential word-by-word analysis
+- **Transformer Neural Networks** (introduced by Google in 2017) revolutionized LLMs by enabling parallel text processing instead of sequential word-by-word analysis
   - This allowed models to assign 'attention' to keywords which improved contextual understanding
+
+- **MITRE ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems)** is a knowledge base of adversarial tactics and techniques targeting machine learning systems
+  - Modelled on the ATT&CK framework, it documents real-world and research-backed attacks across the AI attack lifecycle
+  
