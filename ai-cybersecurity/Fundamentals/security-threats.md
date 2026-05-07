@@ -44,6 +44,22 @@
 
 ### Examples
 
+A few examples of things that can be done to secure AI include:
+
+- **Secure AI Models**
+  - One method of preventing unauthorized access to AI models is by enforcing strict controls over who can interact with them
+    - The use of RBAC and MFA can help restrict access and add an extra layer of security to AI systems
+
+- **Privacy Protection**
+  - Training data should be trates as any other sensitive data and encrypted
+
+- **Implementation of AI Security Standards**
+  - Incorporating recognized security standards throughout the development, deployment, and maintenance stages means organizations can proactively address potential risks
+    - Following the best practices ensures you are adopoting AI in a secure way, minimizing exposure to cyber threats
+
+- **Model Monitoring**
+  - Monitoring should also detect unexpected behaviour, biases, or anomalies that may indicate a security attack
+
 #### Vulnerabilities in AI Models
 
 - **Prompt Injection**
