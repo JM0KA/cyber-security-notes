@@ -17,6 +17,13 @@
 
 - **Federated Learning** : Trains the model across many decentralized devices or organizations, with each participant training locally on their own data and only sending weight updates back to a central server for aggregation
 
+- **Pre-Trained Model** : is one that has alreadt been trained on a large, general-purpose dataset
+
+- **Fine Tuning** : is the process of continuing to train one of these pre-trained models on a smaller, task-specific dataset
+
+> Fine tuning changes the model's task specific behaviour, tone, and domain knowledge
+> Fine tuning DOES NOT change the base model weights
+
 ## How it Works
 
 - LLM's are first trained in a "pre-training" phase, where they process vast amounts of text
@@ -41,3 +48,13 @@
 
 > *Research has shown that quantisation can silently degrade the safety mechanisms built into a model*
 
+- When you fine-tune a pre-trianed model, you inherit everything that model already contains. This includes things you cannot see and did not choose:
+  - Biases baked in during pre-trianing persist
+  - Unexpected behaviours introduced by the base model's training data carry through
+  - Any safety alignment built into the base models is not durable as it might appear
+  
+> This shows up in 3 concrete ways:
+>
+> - Safety Alignment Erodes
+> - Specialization increases attack surface
+> - Version matters, and its rarely tracked
