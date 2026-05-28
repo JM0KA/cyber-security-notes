@@ -24,6 +24,10 @@
 > Fine tuning changes the model's task specific behaviour, tone, and domain knowledge
 > Fine tuning DOES NOT change the base model weights
 
+- **Model Card** : is a structured document that accompanies a model and describes what it is, how it was built, and where it falls short
+
+> Think of this as a nutrition label for an AI model
+
 ## How it Works
 
 - LLM's are first trained in a "pre-training" phase, where they process vast amounts of text
@@ -58,3 +62,18 @@
 > - Safety Alignment Erodes
 > - Specialization increases attack surface
 > - Version matters, and its rarely tracked
+
+- Trusting a model is, fundamentally, trusting the process that produced it
+
+- The model card is your audit trail, in the absence of one, there is no audit trail, just a black box and the hope that whoever built it was thorough
+
+- A sparse or missing model card isn't an inconvenience, it's a warning sign.
+  - It means that the organization distributing the model either didn't evaluate it thoroughly enough to document findings, or chose not to share what they found
+
+- Model-building decisions such as quantisation and federated learning introduces security trade-offs that are rarely documented
+
+- Fine-tuning a pre-trained model inherits everything beneath it
+
+> Fine Tuned models are measurably more susceptible to prompt injection than their base counterparts
+
+Trained models weights are fundamentally opaque; security testing can only sample behaviour rather than audit it
