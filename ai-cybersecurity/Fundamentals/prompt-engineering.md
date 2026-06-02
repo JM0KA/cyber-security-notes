@@ -25,6 +25,16 @@
 
 - **Context Window** : A models maximum "working Memory" mesured in tokens
 
+- **Instruction (Task)** : This is the core command or action you want from the AI, expressed witha  clear verb
+
+- **Context (Background)** Context provides the Ai with relevant information or a scenario so it understands the situation and perspective
+
+- **Output Format (Structure)** : Specify how you wnat the answer to look
+
+- **Constraints (Boundaries)** : These are any rules or limits you impose on the repsonse. Constraints guide the model yo follow specific boundaries
+
+- **System Prompts** are developer-defined, persistent instructions that set the assistant's role, tine and hard rules. They define the model's behaviour, role and constraints at the application level and remain constatnt across sessions
+
 ## How it Works
 
 - The LLM converts each token into a unique number (an ID). The model only works with these numbers, using them to predict what number (token) should come next
@@ -36,3 +46,14 @@
 > - Temperature
 > - Max Tokens
 > - Top-p
+
+- A good prompt explicityly spells out what you want, how you want it, and any constraints to follow
+
+>Experts often break prompts into clear components:
+>
+> - Instruction
+> - Context
+> - Output format
+> - Constraints
+
+f
