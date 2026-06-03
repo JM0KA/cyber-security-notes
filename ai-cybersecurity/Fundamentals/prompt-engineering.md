@@ -35,6 +35,26 @@
 
 - **System Prompts** are developer-defined, persistent instructions that set the assistant's role, tine and hard rules. They define the model's behaviour, role and constraints at the application level and remain constatnt across sessions
 
+- **Zero-Shot Prompting** : gives the model a task with no examples, relying entirely on its pre-trained knowledge
+  - Simple, well-defined tasks where instructions are clear
+  
+  > Effective for simple questions where the task format is familiar but struggles with domain-specific patterns or nuanced requirements
+
+- **One-Shot** : Provides a single example to dlarify expectations
+  - Format clarification or style guidance needed
+
+- **Few-Shot** : includes 2-5 example so the model recognises patterns
+  - Complex patterns, domain-specific output, multiple edge cases
+
+- **In Context Learning** : The model learns directly from examples embedded in your prompt rather than through traditional training
+
+- **Chain of Thought (COT)** : Asks models to break down complex tasks into intermediate steps, mimicking how humans solve multi-step problems. Instead of jumping to conclusions, the model "thinks out loud"
+  - Multiple-step reasoning, security analysis requiring justification, debugging complex logic
+
+> COT significantly improves performance on arithmetic, logic, puzzles, and multi-hop reasoning when used as a prompt technique
+
+- **Templates** : standardised prompt structures for recurring tasks
+
 ## How it Works
 
 - The LLM converts each token into a unique number (an ID). The model only works with these numbers, using them to predict what number (token) should come next
@@ -56,4 +76,8 @@
 > - Output format
 > - Constraints
 
-f
+- Instead of manually typing prompts or using the tools to generate prompts for tasks you need help with regularly, it makes sense to save and catalogue the template for future use
+
+> Templates can ensure consistency across team members, reduce cognitive load, and bake in best practices
+
+- Using the phrase "Let's think step by step" can trigger Zero-Shot Chain-of-Thought which can improve reasining without having to provide examples
