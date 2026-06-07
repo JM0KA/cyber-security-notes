@@ -1,0 +1,59 @@
+# AI Forensics
+
+## Key Concepts
+
+- The AI Forensics Landscape
+- AI & DFIR
+- AI Legal & Ethical Implications
+
+## Important Terms
+
+- **Accuracy** : Refers to the overal rate of correct predictions
+
+- **Precision** : Measyres how often a model's positive predictions are correct
+
+- **Recall** : Measures how successful the model was in identifying all positices in the provided dataset
+
+## How It Works
+
+- Anomaly Detection / UEBA
+  - Flags unusual user/system behaviour compared to learned 'normal'
+    - AI uses unsupervised learning techniques to learn baseline behaviours for users and systems. Deviations from this baseline are flagged as potential threats.
+
+- Phishing & Communication
+  - Detects phishing emails and flags risky language in chat/email logs
+    - Transformer-based language models clssify messages as phishing or benign based on tine, structure, and known attack patterns
+
+- Malware/File Classification
+  - Classifies files as malicious or benign based on extracted static/dynamic features
+    - AI systems analyse file metadata code signatures, and sandbox behaviour to detect threats
+
+- Alert Triage & Prioritisation
+  - Automatically scores, ranks and filters alerts to reduce analyst workload
+    - AI analyses past alert data, analyst feedback, and incident outcomes to rank alerts by severity and relevance.
+  
+- Timeline & Event Correlation
+  - Reconstructs attack timelines by clustering and linkning logs across sources
+    - AI clusters similar log events, identifies casual relationships, and aligns activity across systems
+
+- AI systems and modern machine learning models are generally probabilistic
+  - Instead of following a fixed ruleset that provides a fixed outcome, they use statistical models to learn from data and make predictions with certain possibilities.
+
+- AI's non-deterministic nature allows itself to handle uncertainty and adapt to new patterns
+
+> Extensive prompt engineering is required when using Ai in evaluative contexts due to the non-deterministic nature
+
+- Important metrics to consider when evaluating AI performance are:
+  - **Accuracy**
+    - It is important when assessing an AI's performance to not only consider accuracy, as in isolation, it can be very misleading
+  - **Precision**
+    - Higher Precision = Fewer False Positives
+    - This metric also suffers in isolation as the mdoel can choose to be very selective, only flagging the very obvious maliciious files
+  - **Recall**
+    - In Isolation, this metric would be ineffective as a model could simply cast a wide net, flagging every file as malicious
+
+- The GIGO (Garbage In, Garbage Out) principle is just as trus for Ai systems than it is for any system
+
+The non-determinism, evaluation challenges, and performance trade-offs of AI means it should never replace human expertise
+
+> It can enhance out work but human oversight, judgementm and validation will always remain essential
