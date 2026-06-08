@@ -14,6 +14,12 @@
 
 - **Recall** : Measures how successful the model was in identifying all positices in the provided dataset
 
+- **Convolutional Neural Network (CNN)** : A type of neural newtork that automatically learns patterns in data using small filters commonly used for images
+
+- **Error Level Analysis (ELA)** : A technique used in image forensics to detect areas of an image that may have been digitally altered
+
+- **Generative Adversarial Networks (GAN)** : A setup where two neural networks compete: one generates fake media, and the other tries to detect it
+
 ## How It Works
 
 - Anomaly Detection / UEBA
@@ -56,4 +62,31 @@
 
 The non-determinism, evaluation challenges, and performance trade-offs of AI means it should never replace human expertise
 
-> It can enhance out work but human oversight, judgementm and validation will always remain essential
+> It can enhance our work but human oversight, judgementm and validation will always remain essential
+
+- Communications analysis involves the processing and analysis of large volumes of text; Large Language Models use deep learning to process vast amounts of data, so we can leverage this technology to help in forensics
+
+- Reconstructing incident timelines is a common and critical part of an investigation; it is also labour intensiv and time-consuming. ML is now being harnessed to help with Automated Reconstruction and Anomaly Detection
+  - AI systems are particularly adept at correlating *time-sequenced data* from multiple sources and putting together what happened before, during, and after an incident
+
+  - AI is incredibly good at identifying patterns. This ability can give you an eagle eye, flagging things like impossiible logins, where a user was logged in at two places simultaneously, or behaviour unusual for this specific event
+
+- Breakthroughs in being able to represent malware files in ways processible by deep neural networks have made it possible to classify a file as malicious or benign
+
+- ML is also being considered for use in dynamic analysis, observing how a program behaves to identify whether it is malicious or not
+
+## Examples
+
+- CNN-Based Forgery Detection
+  - Researchers have started combining traditional forensics methods such as ELA (Error Level Analysis) with CNN models to identify image tampering
+
+- Deepfake Detection
+  - CNN models have recently been used in conjunction with some other AI tehnologies to develop specialised detectors; These detectors are used to analyze subtle inconsistencies in facial videos
+
+- GANs
+  - Forensics tools are now using GANs to train detectors on AI-generated fakes, making htem better at apotting subtle manipulations that even humans miss
+
+- Using transformer-based models that are trained for NLP excel at identifying phishing emails
+  - This technology allows us to move away from a rule-based approach for detecting incoming phishing emails and adopt deep learning, context aware models
+
+  - This same technology can is harnessed by some forensics platforms, allowing forensic investigators to automatically scan chats for keywords or patterns related to threats and perform sentiment analysis to guage emotional tone
