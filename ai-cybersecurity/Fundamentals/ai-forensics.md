@@ -20,6 +20,10 @@
 
 - **Generative Adversarial Networks (GAN)** : A setup where two neural networks compete: one generates fake media, and the other tries to detect it
 
+- **Daubert Test** : A U.S. legal rile that determines the admissibility of expert testimony, particularly scientific testimony, in federal court
+
+- **Chain of Custody** : Process of docuemnting the complete journey of evidence during a legal case lifetime, from the collection to final presentation in court
+
 ## How It Works
 
 - Anomaly Detection / UEBA
@@ -74,6 +78,22 @@ The non-determinism, evaluation challenges, and performance trade-offs of AI mea
 - Breakthroughs in being able to represent malware files in ways processible by deep neural networks have made it possible to classify a file as malicious or benign
 
 - ML is also being considered for use in dynamic analysis, observing how a program behaves to identify whether it is malicious or not
+
+- Mant AI mdoels are 'black boxes', meaning they don't readily explain how they came to a conclusion
+
+> Without explainability and expert validation, AI-generated insights may not survive a courtroom challenge
+
+- ML models are trained on historical data; if that data contains skewed representations or prejudices, the model's output will reflect them
+
+> Legally, if a defence can show an AI technique is biased, judges may exclude its results
+>
+> Ethically, forensics experts have a duty to validate and correct biases present in AI tools. Doing this ensures equitable treatment and upholds the integrity of the investigation
+
+- In terms of trust and accountability, courts require the digital evidennce be handled in a traceable and preservable manner and that integrity is preserved at each step
+  - This is achieved by maintining the chain of custofy and an audit trail
+
+> AI processes must be carfully documented and secured, and using on-premise or controlled systems can help achieve this and satisfy legal scrutiny
+
 
 ## Examples
 
